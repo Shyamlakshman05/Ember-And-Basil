@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ember & Basil — Contemporary Italian Dining</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="site">
+<header class="nav">
+<button class="logo" data-scroll="home">Ember <span>&</span> Basil</button>
+<nav class="desktop-nav"><button data-scroll="menu">MENU</button><button data-scroll="story">OUR STORY</button><button data-scroll="visit">VISIT</button></nav>
+<button class="nav-reserve" data-reserve>RESERVE A TABLE</button>
+<button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><button data-scroll="menu">MENU</button><button data-scroll="story">OUR STORY</button><button data-scroll="visit">VISIT</button><button data-reserve>RESERVE A TABLE</button></nav>
+
+<section id="home" class="hero"><div class="hero-bg"></div><div class="hero-overlay"></div>
+<div class="hero-content reveal"><div class="eyebrow">CONTEMPORARY ITALIAN · MOSCOW</div><h1>Ember<br><i>& Basil</i></h1><p>An evening table for slow plates, generous pours and the glow that follows.</p><button class="primary-button" data-reserve>RESERVE A TABLE <span>↗</span></button></div><div class="scroll-hint">SCROLL ↓</div></section>
+
+<section id="story" class="section"><div class="two-column"><div class="reveal"><div class="label">OUR STORY</div><h2>Italian tradition,<br><em>Moscow energy.</em></h2></div><div class="story-text reveal"><p class="big-text">A warm corner of Italy in the heart of Moscow.</p><p>Ember & Basil combines traditional Italian techniques with modern presentation, creating a dining experience designed around good food, conversation and long evenings.</p><button class="link-button" data-scroll="menu">DISCOVER THE MENU <span>↗</span></button></div></div><div class="story-image reveal"><img src="https://a0.pickpik.com/images/760/559/dimly-lit-restaurant-interior-with-tables-and-framed-art.jpg" alt="Restaurant interior"><span>THE KITCHEN · 01</span></div></section>
+
+<section class="dark-section"><div class="reveal"><div class="label">FROM THE KITCHEN</div><h2>Made slowly.<br><em>Remembered easily.</em></h2></div><div class="dish-grid">
+<article class="dish reveal"><div class="dish-image"><img src="https://images.pexels.com/photos/36495569/pexels-photo-36495569.jpeg?cs=srgb&dl=pexels-valentina-besker-917936546-36495569.jpg&fm=jpg" alt="Pasta"></div><div class="dish-bottom"><span>Truffle Pappardelle</span><span>₽1,150</span></div></article>
+<article class="dish reveal"><div class="dish-image"><img src="images/salad.jpg" alt="Burrata"></div><div class="dish-bottom"><span>Burrata & Tomatoes</span><span>₽850</span></div></article>
+<article class="dish reveal"><div class="dish-image"><img src="images/pizza.jpg" alt="Pizza"></div><div class="dish-bottom"><span>Wood-Fired Margherita</span><span>₽750</span></div></article>
+</div></section>
+
+<section id="menu" class="section menu-section"><div class="reveal"><div class="label">THE MENU</div><h2>A table worth<br><em>staying for.</em></h2></div><div class="tabs" id="tabs"></div><div class="menu-list" id="menuList"></div></section>
+
+<section class="atmosphere"><div class="evening-gallery" aria-hidden="true"><img src="images/hero.jpg" alt=""><img src="images/salad.jpg" alt=""><img src="images/pizza.jpg" alt=""></div><div class="atmosphere-overlay"></div><div class="atmosphere-text reveal"><div class="label">THE EVENING</div><h2>Good food should make<br><em>time slow down.</em></h2><p>Handmade pasta. Wood-fired pizza. A glass of something good. Stay as long as you like.</p></div><div class="evening-progress" aria-hidden="true"><span></span><span></span><span></span></div></section>
+
+<section id="visit" class="section"><div class="two-column"><div class="reveal"><div class="label">VISIT US</div><h2>Find us<br><em>in Moscow.</em></h2></div><div class="details reveal"><div><span>ADDRESS</span><p>15 Bolshaya Nikitskaya Street<br>Moscow, Russia</p></div><div><span>OPENING HOURS</span><p>Monday – Sunday<br>12:00 – 23:00</p></div><div><span>CONTACT</span><p>+7 495 000-00-00<br>hello@emberandbasil.ru</p></div><button class="link-button" id="maps">OPEN IN MAPS <span>↗</span></button></div></div></section>
+
+<footer><div><div class="footer-logo">Ember <span>&</span> Basil</div><p>Contemporary Italian · Moscow</p></div><button data-reserve>RESERVE A TABLE <span>↗</span></button></footer>
+
+<div class="modal-bg" id="modal"><div class="modal"><button class="close" id="closeModal">×</button><div class="label">EMBER & BASIL</div><h2>Reserve<br><em>your table.</em></h2><form id="reservationForm"><input required placeholder="Your name"><input required type="email" placeholder="Email"><div class="form-row"><input required type="date"><input required type="time"></div><select><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6+ guests</option></select><button class="confirm">REQUEST RESERVATION</button></form></div></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
